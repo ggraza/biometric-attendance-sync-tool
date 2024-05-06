@@ -134,7 +134,6 @@ Open Terminal.
     python3 -m venv venv
     source venv/bin/activate
     pip install -r requirements.txt
-    ```
 
 **Configure File**
 
@@ -142,7 +141,6 @@ Open Terminal.
     local_config.py.template  ---->  Rename To  ---->  local_config.py
     Fill the Required Fields.....and Save
     File Saved in Folder  [Frappe-bench/ biometric-attendance-sync-tool]
-    ```
 
 **To:  RUN This TOOL:**
 
