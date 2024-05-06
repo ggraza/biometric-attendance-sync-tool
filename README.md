@@ -119,3 +119,45 @@ Installing as a Windows service
 ### License
 
 This project is licensed under [GNU General Public License v3.0](LICENSE)
+Complete Code by Taimoor
+    ```
+ZKT Bio-Metric Device Installation On ERPNEXT:
+_____________________________________________
+
++++++++++++++
+Open Terminal.
++++++++++++++
+  
+Cd frappe-bench
+sudo apt update
+sudo apt install python3
+
+git clone https://github.com/frappe/biometric-attendance-sync-tool.git
+cd biometric-attendance-sync-tool
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+_______________________________
+
+++++++++++++++
+Configure File
+++++++++++++++
+
+local_config.py.template  ---->  Rename To  ---->  local_config.py
+Fill the Required Fields.....and Save
+File Saved in Folder  [Frappe-bench/ biometric-attendance-sync-tool]
+
+____________________________________________________________________
+
+++++++++++++++++++
+To:  RUN This TOOL:
+++++++++++++++++++
+
+Cd frappe-bench
+Cd biometric-attendance-sync-tool
+
+source venv/bin/activate
+python3 erpnext_sync.py
+=================================
+
+```
