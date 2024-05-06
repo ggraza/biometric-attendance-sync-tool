@@ -137,17 +137,14 @@ Open Terminal.
 
 **Configure File**
 
-    ```
     local_config.py.template  ---->  Rename To  ---->  local_config.py
     Fill the Required Fields.....and Save
     File Saved in Folder  [Frappe-bench/ biometric-attendance-sync-tool]
 
 **To:  RUN This TOOL:**
 
-    ```
     Cd frappe-bench
     Cd biometric-attendance-sync-tool
 
     source venv/bin/activate
     python3 erpnext_sync.py
-    ```
