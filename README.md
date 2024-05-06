@@ -125,38 +125,31 @@ _____________________________________________
 ZKT Bio-Metric Device Installation On ERPNEXT:
 Open Terminal.
     ```
-Cd frappe-bench
-sudo apt update
-sudo apt install python3
+    Cd frappe-bench
+    sudo apt update
+    sudo apt install python3
 
-git clone https://github.com/frappe/biometric-attendance-sync-tool.git
-cd biometric-attendance-sync-tool
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+    git clone https://github.com/frappe/biometric-attendance-sync-tool.git
+    cd biometric-attendance-sync-tool
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
     ```
 
-++++++++++++++
-Configure File
-++++++++++++++
+**Configure File**
 
     ```
-local_config.py.template  ---->  Rename To  ---->  local_config.py
-Fill the Required Fields.....and Save
-File Saved in Folder  [Frappe-bench/ biometric-attendance-sync-tool]
+    local_config.py.template  ---->  Rename To  ---->  local_config.py
+    Fill the Required Fields.....and Save
+    File Saved in Folder  [Frappe-bench/ biometric-attendance-sync-tool]
     ```
 
-++++++++++++++++++
-To:  RUN This TOOL:
-++++++++++++++++++
+**To:  RUN This TOOL:**
 
     ```
-Cd frappe-bench
-Cd biometric-attendance-sync-tool
+    Cd frappe-bench
+    Cd biometric-attendance-sync-tool
 
-source venv/bin/activate
-python3 erpnext_sync.py
+    source venv/bin/activate
+    python3 erpnext_sync.py
     ```
-=================================
-
-```
