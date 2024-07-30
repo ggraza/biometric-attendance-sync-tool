@@ -46,6 +46,10 @@ The `erpnext_sync.py` file is the "backbone" of this project. Apart from Windows
    Make a copy of and rename `local_config.py.template` file. [Learn More](#setting-up-config)
 
 3. Run this script using `python3 erpnext_sync.py`
+  To run python script in background add ampersand `&` at the end like this `python3 erpnext_sync.py &`.
+
+   However, unexpected server restarts can kill these background processes too. So to prevent hangup signals, you can even use `nohup` like this `nohup python3 erpnext_sync.py &`
+
 
 ### UNIX
 
