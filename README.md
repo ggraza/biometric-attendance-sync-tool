@@ -46,6 +46,10 @@ The `erpnext_sync.py` file is the "backbone" of this project. Apart from Windows
    Make a copy of and rename `local_config.py.template` file. [Learn More](#setting-up-config)
 
 3. Run this script using `python3 erpnext_sync.py`
+  To run python script in background add ampersand `&` at the end like this `python3 erpnext_sync.py &`.
+
+   However, unexpected server restarts can kill these background processes too. So to prevent hangup signals, you can even use `nohup` like this `nohup python3 erpnext_sync.py &`
+
 
 ### UNIX
 
@@ -119,3 +123,32 @@ Installing as a Windows service
 ### License
 
 This project is licensed under [GNU General Public License v3.0](LICENSE)
+
+_____________________________________________
+### Complete Code by Taimoor
+ZKT Bio-Metric Device Installation On ERPNEXT:
+Open Terminal.
+    ```
+    Cd frappe-bench
+    sudo apt update
+    sudo apt install python3
+
+    git clone https://github.com/frappe/biometric-attendance-sync-tool.git
+    cd biometric-attendance-sync-tool
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+
+**Configure File**
+
+    local_config.py.template  ---->  Rename To  ---->  local_config.py
+    Fill the Required Fields.....and Save
+    File Saved in Folder  [Frappe-bench/ biometric-attendance-sync-tool]
+
+**To:  RUN This TOOL:**
+
+    Cd frappe-bench
+    Cd biometric-attendance-sync-tool
+
+    source venv/bin/activate
+    python3 erpnext_sync.py
